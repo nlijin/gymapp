@@ -6,7 +6,7 @@ import Logo from "../assets/images/Logo.png";
 const Navbar = () => {
   return (
     <Stack
-      bgcolor="gray"
+      bgcolor="beige"
       direction="row"
       justifyContent="space-around"
       sx={{
