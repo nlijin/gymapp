@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   return (
     <Stack
-      bgcolor="beige"
       direction="row"
       justifyContent="space-around"
       sx={{
@@ -29,16 +28,20 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "#3A1212",
-            borderBottom: "3px Solid #FF2625",
+            // borderBottom: "3px Solid #FF2625",
           }}
         >
-          Home
+          <Typography color="#3A1212" fontSize="26px" fontWeight="600px">
+            Home
+          </Typography>
         </Link>
         <a
           href="#exercises"
           style={{ textDecoration: "none", color: "#3A1212" }}
         >
-          Exercises
+          <Typography color="#3A1212" fontSize="26px" fontWeight="600px">
+            Exercises
+          </Typography>
         </a>
       </Stack>
     </Stack>
